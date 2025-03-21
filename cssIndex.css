@@ -1,0 +1,19 @@
+h1{
+    text-align: center;
+}
+input {
+    justify-content: center;
+    align-items: center; 
+
+    width: 400px;
+    height: 30px;
+
+}
+.boton {
+    border: 0px;
+    background-color: blue;
+    color: antiquewhite;
+    width: 150px;
+    height: 80px;
+    border-radius: 16px;
+}

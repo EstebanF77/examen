@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="cssIndex.css">
+</head>
+<body>
+
+    <form action="AgregarUsuario.php" method="post">
+            
+        <div>
+        <h1>Ingrese los datos del usuario</h1> 
+        <label >Nombre:</label>
+        <input  name="nombre" type="text" required >
+        <br>
+        <label >Email:</label>
+        <input type="email" name="email" required maxlength="60">
+        <br>
+        <label >Edad;</label>
+        <input name="edad" type="number" required max="100">
+        
+        </div>
+        <button type="submit">Agregar Usuario</button>
+    </form>
+    
+
+    <form action="EliminarUsuario.php" method="post">
+        <h1>Eliminar Usuario</h1>
+        <label for="id">ID del Usuario:</label>
+        <input type="number" name="id" required>
+        <button type="submit">Eliminar Usuario</button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <form action="mostrarLosUsuarios.php" method="post">
+        <button type="submit">Mostrar Todos los Usuarios</button>
+    </form>
+    
+    <form action="ModificarUsuario.php" method="post">
+        <h2>Modificar Usuario</h2>
+        <label for="id">ID del Usuario:</label>
+        <input type="number" name="id" required>
+        <br>
+        <label for="nombre">Nuevo Nombre:</label>
+        <input type="text" name="nombre" required>
+        <br>
+        <label for="email">Nuevo Email:</label>
+        <input type="email" name="email" required>
+        <br>
+        <label for="edad">Nueva Edad:</label>
+        <input type="number" name="edad" required>
+        <br>
+        <button type="submit">Modificar Usuario</button>
+    </form>
+    
+    
+    
+
+</body>
+</html>
